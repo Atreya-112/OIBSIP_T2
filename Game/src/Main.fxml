@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" 
+xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
+   <children>
+      <Button fx:id="sub" layoutX="453.0" layoutY="59.0" mnemonicParsing="false" onAction="#Submit" text="Submit">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfnum" layoutX="273.0" layoutY="60.0" />
+      <Label fx:id="prompt" layoutX="26.0" layoutY="57.0" text="Enter your guess here : ">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbguessleft" layoutX="26.0" layoutY="191.0" prefHeight="131.0" prefWidth="210.0" text="Gueses left : 9" 
+      wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="-163.0" layoutY="191.0" text="Label" />
+      <Label fx:id="hint" layoutX="26.0" layoutY="153.0" text="Guess a number !! ">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="Restart" layoutX="241.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchToStart" text="Restart" 
+      visible="false">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="Win" fitHeight="150.0" fitWidth="200.0" layoutX="409.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true"
+       visible="false">
+         <image>
+            <Image url="@star.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Lose" fitHeight="150.0" fitWidth="200.0" layoutX="402.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true" 
+      visible="false">
+         <image>
+            <Image url="@cry.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
